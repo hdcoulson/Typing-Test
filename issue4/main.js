@@ -21,3 +21,10 @@ document.addEventListener('keypress', function(event) {
       $currentKey.classList.add('wrong')
   }
 })
+document.addEventListener('counter', function(???) {
+  var numberWrong = 0
+  for (var i = 0; i < ???; i++) {
+    if ()
+    }
+    return 'Number Incorrect' + numberWrong
+  })
