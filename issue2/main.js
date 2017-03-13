@@ -12,6 +12,12 @@ $firstletter.classList.add('current')
 //Take user input with eventlisteners/
 document.addEventListener('keydown', function(event) {
   console.log(event.key)
-  //var $currentKey = (.current)
-  //event.key === $currentKey
+  var $currentKey = document.querySelector('.current')
+  var $currentCharacter = $currentKey.testSentenceContent
+  if (event.key === $currentKey) {
+    $current.classList.remove('current')
+    $current.nextSibling.classList.add('current')
+    } else {
+      $currentKey.classList.add('wrong')
+  }
 })
