@@ -9,15 +9,3 @@ document.body.appendChild($letter)
 //style each character, then reference the css file for formatting//
 var $firstletter=document.querySelector('span')
 $firstletter.classList.add('current')
-//Take user input with eventlisteners/
-document.addEventListener('keydown', function(event) {
-  console.log(event.key)
-  var $currentKey = document.querySelector('.current')
-  var $currentCharacter = $currentKey.testSentenceContent
-  if (event.key === $currentKey) {
-    $current.classList.remove('current')
-    $current.nextSibling.classList.add('current')
-    } else {
-      $currentKey.classList.add('wrong')
-  }
-})
