@@ -1,6 +1,7 @@
 window.onload = function() {
-  var sentence = document.createElement("p");
-  var sentenceText = document.createTextNode("The brown fox is quick");
-  sentence.appendChild(sentenceText);
-  document.body.appendChild(sentence);
-  }
+var testSentence = document.createElement('h2');
+var testText  = document.createTextNode('The brown fox is quick.');
+testSentence.appendChild(testText);
+var position = document.getElementsByClassName('text-center')[0];
+position.appendChild(testSentence)
+}
